@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/babyland1/static/css/main.ae5902bb.css",
-    "main.js": "/babyland1/static/js/main.773ce6c9.js",
+    "main.js": "/babyland1/static/js/main.2d91a79d.js",
     "static/js/453.2dd96afd.chunk.js": "/babyland1/static/js/453.2dd96afd.chunk.js",
     "static/media/image10.png": "/babyland1/static/media/image10.674f2b1dd35fdf4ccc19.png",
     "static/media/log.jpg": "/babyland1/static/media/log.b64e509fbab8c3b37e52.jpg",
     "index.html": "/babyland1/index.html",
     "main.ae5902bb.css.map": "/babyland1/static/css/main.ae5902bb.css.map",
-    "main.773ce6c9.js.map": "/babyland1/static/js/main.773ce6c9.js.map",
+    "main.2d91a79d.js.map": "/babyland1/static/js/main.2d91a79d.js.map",
     "453.2dd96afd.chunk.js.map": "/babyland1/static/js/453.2dd96afd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae5902bb.css",
-    "static/js/main.773ce6c9.js"
+    "static/js/main.2d91a79d.js"
   ]
 }
