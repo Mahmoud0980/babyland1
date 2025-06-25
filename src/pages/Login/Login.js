@@ -13,7 +13,7 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
     const handleLogin = () => {
-        axios.post("/Login.php", {
+        axios.post("http://babyland-001-site1.stempurl.com/Login.php", {
             mode: 'CORS',
             credentials: 'include',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
