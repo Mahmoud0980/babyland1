@@ -13,7 +13,10 @@ export default function Register() {
     const [username, setUsername] = useState("");
     const handleRegister = async () => {
         try {
-            const response = await axios.post("http://localhost/API_Test/register.php", {
+            const response = await axios.post("/register.php", {
+                mode: 'CORS',
+                credentials: 'include',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 email,
                 password,
                 username,

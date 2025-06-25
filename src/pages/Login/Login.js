@@ -13,13 +13,16 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
     const handleLogin = () => {
-        axios.post("https://babyland.byethost3.com/api/Login.php", {
-
+        axios.post("/Login.php", {
+            mode: 'CORS',
+            credentials: 'include',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
 
             email: email,
             password: password
         })
             .then(res => {
+                console.log("Response Data:", res.data);
                 setMessage(res.data.message);
                 if (res.data.success) {
                     // تسجيل الدخول ناجح

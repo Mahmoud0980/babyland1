@@ -19,13 +19,22 @@ const ProductsFlipCard = () => {
   const [selectedColor, setSelectedColor] = useState('');
 
   useEffect(() => {
-    axios.get("http://localhost/API_Test/getProducts.php")
+    axios.get("/getProducts.php", {
+      mode: 'CORS',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+
+    })
       .then((response) => setProducts(response.data))
       .catch((error) => console.error("خطأ في جلب المنتجات:", error));
   }, []);
 
   useEffect(() => {
-    axios.get('http://localhost/API_Test/predict_price.php')
+    axios.get("/predict_price.php", {
+      mode: 'CORS',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    })
       .then(response => {
         if (response.data.predicted_price) {
           setPrice(response.data.predicted_price);
@@ -47,7 +56,10 @@ const ProductsFlipCard = () => {
     const userName = localStorage.getItem("userName");
     if (!userName || !selectedProduct) return;
 
-    axios.post("http://localhost/API_Test/addToCart.php", {
+    axios.post("/addToCart.php", {
+      mode: 'CORS',
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       user_name: userName,
       product_id: selectedProduct.id,
       quantity: 1,

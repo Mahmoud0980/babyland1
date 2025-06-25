@@ -1,5 +1,6 @@
 {
-  "homepage": "https://Mahmoud0980.github.io/babyland",
+  "homepage": "https://Mahmoud0980.github.io/babyland1",
+  "proxy": "http://babyland-001-site1.stempurl.com",
   "name": "babyland",
   "version": "0.1.0",
   "private": true,
