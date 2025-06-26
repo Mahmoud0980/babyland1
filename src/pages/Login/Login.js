@@ -14,10 +14,6 @@ export default function Login() {
     const [message, setMessage] = useState("");
     const handleLogin = () => {
         axios.post("http://babyland-001-site1.stempurl.com/Login.php", {
-            mode: 'CORS',
-            credentials: 'include',
-            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-
             email: email,
             password: password
         })
